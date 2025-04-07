@@ -14,6 +14,9 @@ store = {
 }
 
 def get_stock(category, product):
+    
+    """ esta funcion obtiene el numero de productos de una categoria"""
+
     items = store.get(category)
     if items:
         for item in items:
