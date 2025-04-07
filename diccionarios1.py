@@ -14,6 +14,9 @@ store = {
 }
 
 def get_stock(category, product):
+    
+    """ esta funcion obtiene el numero de productos de una categoria"""
+
     items = store.get(category)
     if items:
         for item in items:
@@ -23,6 +26,7 @@ def get_stock(category, product):
     return "Error: The category does not exist."
 
 def modify_stock(category, product, quantity):
+    """ esta funcion modifica el numero de stocks"""
     items = store.get(category)
     if items:
         for item in items:
